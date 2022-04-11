@@ -113,20 +113,20 @@ body{
 }
 .text-1{
     color: white;
-    font-size: 50px;
+    font-size: calc(2.1vw + 0.8rem);
     font-weight: 400;
     padding-left: 0.8em;
 }
 .text-2{
     color: white;
-    font-size: 130px;
+    font-size: calc(4.2vw + 2rem);
     font-weight: 700;
     padding: 0.3em;
 }
 
 .text-3{
     color: white;
-    font-size: 50px;
+    font-size: calc(2.1vw + 0.8rem);
     font-weight: 700;
     padding-left: 0.8em;
 }
@@ -147,7 +147,7 @@ button{
     outline: none;
     cursor: pointer;
     border-radius: 1em;
-    font-size: 30px;
+    font-size: calc(0.5vw + 1.2rem);
     margin-left: 1.3em;
     margin-top: 1.3em;
 } 
@@ -228,8 +228,18 @@ button:hover{
 
 
 
-
-
+/* 
+@media screen and (max-width: 1500px){
+    .text-2{
+        font-size: calc(3.2vw + 2rem);
+    }
+    .text-1{
+        font-size: calc(1.1vw + 0.8rem);
+    }
+    .text-3{
+        font-size: calc(1.1vw + 0.8rem);
+    }
+} */
 
 
 
@@ -241,7 +251,7 @@ button:hover{
     }
     .menu-btn{
         display: block;
-        z-index: 999;
+        z-index: 100;
         
     }
     .home .entry_content{
@@ -276,55 +286,44 @@ button:hover{
         display: inline-block;
         
     }
+    .intro-text{
+        font-size: 3rem;
+    }
 }
-/* 
-@media screen and (max-width: 450px){
-
-    .menu li{
-        display: block;
-        float:none;
-        padding:none;
+@media screen and (max-width:750px) {
+    .text-2{
+        font-size: calc(2.2vw + 2rem);
     }
-    .menu{
-        justify-content: center;
-        text-align: center;
-        z-index: 10;
+    .text-1{
+        font-size: calc(.5vw + 0.8rem);
     }
-    #home-li{
-        float: none;
-    }
-    .menu a{
-        font-size: 20px;
-    }
-    h1{
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
-        padding: 0.2em;
-    }
-    h2{
-        color: white;
-        font-size: 15px;
-        font-weight: 400;
-        padding-left: 0.4em;
-    }
-    .entry_content{
-        position: absolute;
-        top: 50%;
-        left: 8%;
-        transform: translateY(-50%);
+    .text-3{
+        font-size: calc(.5vw + 0.8rem);
     }
     button{
-        color: white;
-        padding: 0.5em 1.3em;
-        background: transparent;
-        border: 2px solid white;
-        outline: none;
-        cursor: pointer;
-        border-radius: 1em;
-        font-size: 15px;
-        margin-left: 20px;
-        margin-top: 20px;
-    } 
+        font-size: calc(0.5vw + .6rem);
+    }
+    .intro-text{
+        font-size: 2.5rem;
+    }
+}
+ 
+@media screen and (max-width: 450px){
+    .text-2{
+        font-size: calc(2.2vw + 1.5rem);
+    }
+    .text-1{
+        font-size: calc(.5vw + 0.6rem);
+    }
+    .text-3{
+        font-size: calc(.5vw + 0.6rem);
+    }
+    button{
+        font-size: calc(0.5vw + .5rem);
+    }
+    .intro-text{
+        font-size: 2rem;
+    }
+  
 } 
-    */
+    
